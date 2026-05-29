@@ -1112,3 +1112,330 @@ footer p {
     transition-duration: 0.01ms !important;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .site-header {
+    position: static !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #d8e1df !important;
+    backdrop-filter: none !important;
+    break-after: avoid !important;
+  }
+
+  .nav {
+    max-width: 100% !important;
+    padding: 4mm 0 !important;
+    display: block !important;
+  }
+
+  .brand {
+    color: #0a3152 !important;
+    font-size: 12pt !important;
+  }
+
+  .brand-mark {
+    width: 9mm !important;
+    height: 9mm !important;
+    border-radius: 2mm !important;
+    font-size: 7pt !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .nav-links,
+  .button-row {
+    display: none !important;
+  }
+
+  .section {
+    max-width: 100% !important;
+    padding: 8mm 0 !important;
+    break-inside: auto !important;
+  }
+
+  .hero {
+    min-height: auto !important;
+    padding-top: 8mm !important;
+    padding-bottom: 8mm !important;
+    break-after: avoid !important;
+  }
+
+  .hero-grid,
+  .split-section,
+  .profile-grid,
+  .contact-section {
+    display: block !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #0a3152 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  h1 {
+    font-size: 32pt !important;
+    line-height: 1 !important;
+    margin: 0 0 4mm !important;
+  }
+
+  h2 {
+    font-size: 19pt !important;
+    line-height: 1.1 !important;
+    margin: 0 0 4mm !important;
+  }
+
+  h3 {
+    font-size: 12.5pt !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2mm !important;
+  }
+
+  p {
+    margin-bottom: 3mm !important;
+  }
+
+  .hero-role {
+    color: #2f7048 !important;
+    font-size: 15pt !important;
+    margin-bottom: 3mm !important;
+  }
+
+  .lead,
+  .section-intro,
+  .text-stack p {
+    font-size: 10.8pt !important;
+    color: #374151 !important;
+  }
+
+  .section-heading {
+    margin-bottom: 5mm !important;
+    break-after: avoid !important;
+  }
+
+  .hero-media {
+    margin-top: 5mm !important;
+  }
+
+  .profile-photo-card {
+    display: grid !important;
+    width: 58mm !important;
+    max-width: 58mm !important;
+    padding: 3mm !important;
+    margin: 4mm auto 0 !important;
+    border: 1px solid #d8e1df !important;
+    background: #ffffff !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .profile-photo-frame {
+    width: 100% !important;
+    aspect-ratio: 4 / 5 !important;
+    padding: 1.5mm !important;
+    border-radius: 2mm !important;
+    background: #0a3152 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .profile-photo-frame img {
+    border: 1.5mm solid #ffffff !important;
+    border-radius: 1.5mm !important;
+    object-fit: cover !important;
+    object-position: center 23% !important;
+  }
+
+  .profile-photo-card figcaption {
+    gap: 1mm !important;
+  }
+
+  .profile-photo-card figcaption strong {
+    font-size: 11pt !important;
+  }
+
+  .profile-photo-card figcaption span {
+    font-size: 8.5pt !important;
+    color: #4b5563 !important;
+  }
+
+  .profile-card-map,
+  .geo-panel,
+  .map-raster {
+    display: none !important;
+  }
+
+  .skills-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4mm !important;
+  }
+
+  .skills-grid article,
+  .profile-card,
+  .reflection-grid article,
+  .contact-card {
+    background: #ffffff !important;
+    border: 1px solid #d8e1df !important;
+    border-radius: 2mm !important;
+    padding: 4mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .skills-grid h3 {
+    font-size: 10.8pt !important;
+  }
+
+  .skills-grid p,
+  .compact-list {
+    font-size: 9.8pt !important;
+    color: #374151 !important;
+  }
+
+  .skill-index,
+  .reflection-grid span {
+    width: 7mm !important;
+    min-width: 7mm !important;
+    height: 7mm !important;
+    margin-bottom: 2mm !important;
+    border-radius: 2mm !important;
+    background: #dde9de !important;
+    color: #0a3152 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .project-list {
+    display: block !important;
+    margin-top: 4mm !important;
+  }
+
+  .project-card {
+    display: block !important;
+    margin: 0 0 7mm !important;
+    padding: 5mm !important;
+    background: #ffffff !important;
+    border: 1px solid #d8e1df !important;
+    border-radius: 2mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .project-card p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .project-visual {
+    min-height: 26mm !important;
+    max-height: 34mm !important;
+    margin: 0 0 4mm !important;
+    padding: 4mm !important;
+    border-radius: 2mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .visual-tags span,
+  .map-caption span {
+    padding: 1.5mm 2mm !important;
+    border-radius: 1.5mm !important;
+    font-size: 7.5pt !important;
+  }
+
+  .project-type {
+    color: #2f7048 !important;
+    font-size: 8.5pt !important;
+    margin-bottom: 2mm !important;
+  }
+
+  .project-content h3 {
+    font-size: 14pt !important;
+  }
+
+  .project-content p {
+    color: #1f2937 !important;
+  }
+
+  .reflection-grid,
+  .profile-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4mm !important;
+  }
+
+  .reflection-grid h3 {
+    font-size: 11.5pt !important;
+  }
+
+  .btn,
+  .text-link {
+    display: inline-flex !important;
+    min-height: auto !important;
+    padding: 1.5mm 2.5mm !important;
+    border: 1px solid #0a3152 !important;
+    border-radius: 1.5mm !important;
+    background: #ffffff !important;
+    color: #0a3152 !important;
+    font-size: 9pt !important;
+    text-decoration: none !important;
+  }
+
+  a {
+    color: #0a3152 !important;
+    text-decoration: none !important;
+  }
+
+  .contact-section {
+    margin-bottom: 8mm !important;
+    padding: 6mm !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    border: 1px solid #d8e1df !important;
+    border-radius: 2mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .contact-section h2,
+  .contact-card strong,
+  .contact-card a {
+    color: #0a3152 !important;
+  }
+
+  footer {
+    padding: 4mm 0 !important;
+    background: #ffffff !important;
+    color: #374151 !important;
+    border-top: 1px solid #d8e1df !important;
+    page-break-before: avoid !important;
+  }
+
+  footer p {
+    font-size: 9pt !important;
+  }
+}
