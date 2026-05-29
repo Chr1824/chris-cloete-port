@@ -1116,15 +1116,17 @@ footer p {
 @media print {
   @page {
     size: A4;
-    margin: 12mm;
+    margin: 11mm;
   }
 
   html,
   body {
     background: #ffffff !important;
     color: #111827 !important;
-    font-size: 10.5pt !important;
-    line-height: 1.35 !important;
+    font-size: 9.8pt !important;
+    line-height: 1.3 !important;
+    orphans: 3;
+    widows: 3;
   }
 
   *,
@@ -1144,7 +1146,7 @@ footer p {
 
   .nav {
     max-width: 100% !important;
-    padding: 4mm 0 !important;
+    padding: 3mm 0 !important;
     display: block !important;
   }
 
@@ -1169,14 +1171,14 @@ footer p {
 
   .section {
     max-width: 100% !important;
-    padding: 8mm 0 !important;
+    padding: 5.5mm 0 !important;
     break-inside: auto !important;
   }
 
   .hero {
     min-height: auto !important;
-    padding-top: 8mm !important;
-    padding-bottom: 8mm !important;
+    padding-top: 5mm !important;
+    padding-bottom: 5mm !important;
     break-after: avoid !important;
   }
 
@@ -1193,58 +1195,68 @@ footer p {
     color: #0a3152 !important;
     page-break-after: avoid !important;
     break-after: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   h1 {
-    font-size: 32pt !important;
+    font-size: 26pt !important;
     line-height: 1 !important;
-    margin: 0 0 4mm !important;
+    margin: 0 0 3mm !important;
   }
 
   h2 {
-    font-size: 19pt !important;
+    font-size: 17pt !important;
     line-height: 1.1 !important;
-    margin: 0 0 4mm !important;
+    margin: 0 0 3mm !important;
   }
 
   h3 {
-    font-size: 12.5pt !important;
+    font-size: 11.5pt !important;
     line-height: 1.2 !important;
-    margin-bottom: 2mm !important;
+    margin-bottom: 1.5mm !important;
   }
 
   p {
-    margin-bottom: 3mm !important;
+    margin-bottom: 2mm !important;
   }
 
   .hero-role {
     color: #2f7048 !important;
-    font-size: 15pt !important;
-    margin-bottom: 3mm !important;
+    font-size: 12.5pt !important;
+    margin-bottom: 2mm !important;
   }
 
   .lead,
   .section-intro,
   .text-stack p {
-    font-size: 10.8pt !important;
+    font-size: 9.8pt !important;
     color: #374151 !important;
   }
 
   .section-heading {
-    margin-bottom: 5mm !important;
+    margin-bottom: 3.5mm !important;
     break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  .section-heading + *,
+  .project-content h3 + p,
+  .reflection-grid h3 + p {
+    break-before: avoid !important;
+    page-break-before: avoid !important;
   }
 
   .hero-media {
-    margin-top: 5mm !important;
+    margin-top: 3mm !important;
   }
 
   .profile-photo-card {
     display: grid !important;
-    width: 58mm !important;
-    max-width: 58mm !important;
-    padding: 3mm !important;
-    margin: 4mm auto 0 !important;
+    width: 42mm !important;
+    max-width: 42mm !important;
+    padding: 2mm !important;
+    margin: 2mm auto 0 !important;
     border: 1px solid #d8e1df !important;
     background: #ffffff !important;
     break-inside: avoid !important;
@@ -1253,8 +1265,8 @@ footer p {
 
   .profile-photo-frame {
     width: 100% !important;
-    aspect-ratio: 4 / 5 !important;
-    padding: 1.5mm !important;
+    aspect-ratio: 1 !important;
+    padding: 1mm !important;
     border-radius: 2mm !important;
     background: #0a3152 !important;
     print-color-adjust: exact;
@@ -1262,22 +1274,22 @@ footer p {
   }
 
   .profile-photo-frame img {
-    border: 1.5mm solid #ffffff !important;
+    border: 1mm solid #ffffff !important;
     border-radius: 1.5mm !important;
     object-fit: cover !important;
-    object-position: center 23% !important;
+    object-position: center 21% !important;
   }
 
   .profile-photo-card figcaption {
-    gap: 1mm !important;
+    gap: 0.5mm !important;
   }
 
   .profile-photo-card figcaption strong {
-    font-size: 11pt !important;
+    font-size: 9.5pt !important;
   }
 
   .profile-photo-card figcaption span {
-    font-size: 8.5pt !important;
+    font-size: 7.8pt !important;
     color: #4b5563 !important;
   }
 
@@ -1290,7 +1302,7 @@ footer p {
   .skills-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 4mm !important;
+    gap: 3mm !important;
   }
 
   .skills-grid article,
@@ -1300,27 +1312,29 @@ footer p {
     background: #ffffff !important;
     border: 1px solid #d8e1df !important;
     border-radius: 2mm !important;
-    padding: 4mm !important;
+    padding: 3mm !important;
     break-inside: avoid !important;
     page-break-inside: avoid !important;
   }
 
   .skills-grid h3 {
-    font-size: 10.8pt !important;
+    font-size: 9.8pt !important;
+    margin-bottom: 1mm !important;
   }
 
   .skills-grid p,
   .compact-list {
-    font-size: 9.8pt !important;
+    font-size: 8.8pt !important;
+    line-height: 1.25 !important;
     color: #374151 !important;
   }
 
   .skill-index,
   .reflection-grid span {
-    width: 7mm !important;
-    min-width: 7mm !important;
-    height: 7mm !important;
-    margin-bottom: 2mm !important;
+    width: 6mm !important;
+    min-width: 6mm !important;
+    height: 6mm !important;
+    margin-bottom: 1mm !important;
     border-radius: 2mm !important;
     background: #dde9de !important;
     color: #0a3152 !important;
@@ -1330,13 +1344,13 @@ footer p {
 
   .project-list {
     display: block !important;
-    margin-top: 4mm !important;
+    margin-top: 3mm !important;
   }
 
   .project-card {
     display: block !important;
-    margin: 0 0 7mm !important;
-    padding: 5mm !important;
+    margin: 0 0 5mm !important;
+    padding: 4mm !important;
     background: #ffffff !important;
     border: 1px solid #d8e1df !important;
     border-radius: 2mm !important;
@@ -1349,10 +1363,10 @@ footer p {
   }
 
   .project-visual {
-    min-height: 26mm !important;
-    max-height: 34mm !important;
-    margin: 0 0 4mm !important;
-    padding: 4mm !important;
+    min-height: 17mm !important;
+    max-height: 22mm !important;
+    margin: 0 0 2.5mm !important;
+    padding: 2.5mm !important;
     border-radius: 2mm !important;
     break-inside: avoid !important;
     page-break-inside: avoid !important;
@@ -1360,21 +1374,19 @@ footer p {
     -webkit-print-color-adjust: exact;
   }
 
-  .visual-tags span,
-  .map-caption span {
-    padding: 1.5mm 2mm !important;
-    border-radius: 1.5mm !important;
-    font-size: 7.5pt !important;
+  .visual-tags,
+  .map-caption {
+    display: none !important;
   }
 
   .project-type {
     color: #2f7048 !important;
-    font-size: 8.5pt !important;
-    margin-bottom: 2mm !important;
+    font-size: 8pt !important;
+    margin-bottom: 1mm !important;
   }
 
   .project-content h3 {
-    font-size: 14pt !important;
+    font-size: 12.5pt !important;
   }
 
   .project-content p {
@@ -1385,23 +1397,23 @@ footer p {
   .profile-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 4mm !important;
+    gap: 3mm !important;
   }
 
   .reflection-grid h3 {
-    font-size: 11.5pt !important;
+    font-size: 10.5pt !important;
   }
 
   .btn,
   .text-link {
     display: inline-flex !important;
     min-height: auto !important;
-    padding: 1.5mm 2.5mm !important;
+    padding: 1mm 2mm !important;
     border: 1px solid #0a3152 !important;
     border-radius: 1.5mm !important;
     background: #ffffff !important;
     color: #0a3152 !important;
-    font-size: 9pt !important;
+    font-size: 8.5pt !important;
     text-decoration: none !important;
   }
 
@@ -1411,8 +1423,8 @@ footer p {
   }
 
   .contact-section {
-    margin-bottom: 8mm !important;
-    padding: 6mm !important;
+    margin-bottom: 5mm !important;
+    padding: 4mm !important;
     background: #ffffff !important;
     color: #111827 !important;
     border: 1px solid #d8e1df !important;
@@ -1428,7 +1440,7 @@ footer p {
   }
 
   footer {
-    padding: 4mm 0 !important;
+    padding: 3mm 0 !important;
     background: #ffffff !important;
     color: #374151 !important;
     border-top: 1px solid #d8e1df !important;
@@ -1436,6 +1448,6 @@ footer p {
   }
 
   footer p {
-    font-size: 9pt !important;
+    font-size: 8.5pt !important;
   }
 }
